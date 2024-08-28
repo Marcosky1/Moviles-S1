@@ -204,7 +204,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 58067271}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 162233147}
+        m_TargetAssemblyTypeName: PokeBallSpawner, Assembly-CSharp
+        m_MethodName: SelectPokeBall
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &58067271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -324,7 +336,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 112785545}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 162233147}
+        m_TargetAssemblyTypeName: PokeBallSpawner, Assembly-CSharp
+        m_MethodName: SelectPokeBall
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &112785545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -374,6 +398,7 @@ GameObject:
   - component: {fileID: 162233146}
   - component: {fileID: 162233145}
   - component: {fileID: 162233144}
+  - component: {fileID: 162233147}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -431,6 +456,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &162233147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 162233143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f1c30dbf4f48de47988a43f3f1d2303, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pokeBalls:
+  - {fileID: 7162425926123398768, guid: 917eb171e719f784ca399314e752c3a7, type: 3}
+  - {fileID: 8095367636911705270, guid: 7cf32768b0f455c4fbc776b7331a95bd, type: 3}
+  - {fileID: 6254658689994228734, guid: 1f66faa9b1a37164c8a94e4118ae49d6, type: 3}
+  - {fileID: 7692004742343521990, guid: 8b4e33d12a5d0ab40b9a1df7b035c7bc, type: 3}
+  - {fileID: 1212137494310797136, guid: d212f74cfc949aa40b92ee50f8eba061, type: 3}
+  - {fileID: 5266653561810378951, guid: 8b5f89e50007a7248830df3372c2ec05, type: 3}
+  colors:
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 1, g: 0.6039216, b: 0, a: 1}
+  - {r: 1, g: 0.9058824, b: 0, a: 1}
+  - {r: 0.23529413, g: 1, b: 0.023529414, a: 1}
+  - {r: 0.47450984, g: 0, b: 1, a: 1}
+  - {r: 0, g: 0.81568635, b: 1, a: 1}
+  doubleTapThreshold: 0.5
+  trailEffectPrefab: {fileID: 0}
 --- !u!1 &163083940
 GameObject:
   m_ObjectHideFlags: 0
@@ -648,7 +701,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 180944378}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 162233147}
+        m_TargetAssemblyTypeName: PokeBallSpawner, Assembly-CSharp
+        m_MethodName: SelectColor
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &180944378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -768,7 +833,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 413843525}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 162233147}
+        m_TargetAssemblyTypeName: PokeBallSpawner, Assembly-CSharp
+        m_MethodName: SelectPokeBall
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &413843525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -818,9 +895,6 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
-  - component: {fileID: 519420035}
-  - component: {fileID: 519420034}
-  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -902,63 +976,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &519420033
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519420028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b12729783946d544b4f396b6273c3b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shapes:
-  - {fileID: 7162425926123398768, guid: 917eb171e719f784ca399314e752c3a7, type: 3}
-  - {fileID: 8095367636911705270, guid: 7cf32768b0f455c4fbc776b7331a95bd, type: 3}
-  - {fileID: 6254658689994228734, guid: 1f66faa9b1a37164c8a94e4118ae49d6, type: 3}
-  - {fileID: 7692004742343521990, guid: 8b4e33d12a5d0ab40b9a1df7b035c7bc, type: 3}
-  - {fileID: 1212137494310797136, guid: d212f74cfc949aa40b92ee50f8eba061, type: 3}
-  - {fileID: 5266653561810378951, guid: 8b5f89e50007a7248830df3372c2ec05, type: 3}
-  colors:
-  - {r: 1, g: 0, b: 0, a: 0}
-  - {r: 1, g: 0.6039216, b: 0, a: 0}
-  - {r: 1, g: 0.9058824, b: 0, a: 0}
-  - {r: 0.23529413, g: 1, b: 0.023529414, a: 0}
-  - {r: 0.47450984, g: 0, b: 1, a: 0}
-  - {r: 0, g: 0.81568635, b: 1, a: 0}
-  swipeThreshold: 50
-  swipeTrail: {fileID: 163083941}
---- !u!114 &519420034
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519420028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d49b7c1bcd2e07499844da127be038d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SendPointerHoverToParent: 1
-  m_ForceModuleActive: 0
---- !u!114 &519420035
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519420028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
-  m_sendNavigationEvents: 1
-  m_DragThreshold: 10
 --- !u!1 &614041399
 GameObject:
   m_ObjectHideFlags: 0
@@ -1040,7 +1057,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 614041402}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 162233147}
+        m_TargetAssemblyTypeName: PokeBallSpawner, Assembly-CSharp
+        m_MethodName: SelectColor
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &614041402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1161,13 +1190,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 519420028}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 162233147}
+        m_TargetAssemblyTypeName: PokeBallSpawner, Assembly-CSharp
+        m_MethodName: SelectPokeBall
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1292,7 +1321,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1052028537}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 162233147}
+        m_TargetAssemblyTypeName: PokeBallSpawner, Assembly-CSharp
+        m_MethodName: SelectPokeBall
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1052028537
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1412,7 +1453,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1063008719}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 162233147}
+        m_TargetAssemblyTypeName: PokeBallSpawner, Assembly-CSharp
+        m_MethodName: SelectColor
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1063008719
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1532,7 +1585,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1450976939}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 162233147}
+        m_TargetAssemblyTypeName: PokeBallSpawner, Assembly-CSharp
+        m_MethodName: SelectPokeBall
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1450976939
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1767,7 +1832,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1845268438}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 162233147}
+        m_TargetAssemblyTypeName: PokeBallSpawner, Assembly-CSharp
+        m_MethodName: SelectColor
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1845268438
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2047,7 +2124,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1973124240}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 162233147}
+        m_TargetAssemblyTypeName: PokeBallSpawner, Assembly-CSharp
+        m_MethodName: SelectColor
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1973124240
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2167,7 +2256,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2060802100}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 162233147}
+        m_TargetAssemblyTypeName: PokeBallSpawner, Assembly-CSharp
+        m_MethodName: SelectColor
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2060802100
 MonoBehaviour:
   m_ObjectHideFlags: 0
