@@ -205,8 +205,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 162233147}
-        m_TargetAssemblyTypeName: PokeBallSpawner, Assembly-CSharp
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: PokeBallManager, Assembly-CSharp
         m_MethodName: SelectPokeBall
         m_Mode: 3
         m_Arguments:
@@ -337,8 +337,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 162233147}
-        m_TargetAssemblyTypeName: PokeBallSpawner, Assembly-CSharp
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: PokeBallManager, Assembly-CSharp
         m_MethodName: SelectPokeBall
         m_Mode: 3
         m_Arguments:
@@ -397,8 +397,8 @@ GameObject:
   m_Component:
   - component: {fileID: 162233146}
   - component: {fileID: 162233145}
-  - component: {fileID: 162233144}
   - component: {fileID: 162233147}
+  - component: {fileID: 162233151}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -406,26 +406,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &162233144
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 162233143}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SendPointerHoverToParent: 1
-  m_HorizontalAxis: Horizontal
-  m_VerticalAxis: Vertical
-  m_SubmitButton: Submit
-  m_CancelButton: Cancel
-  m_InputActionsPerSecond: 10
-  m_RepeatDelay: 0.5
-  m_ForceModuleActive: 0
 --- !u!114 &162233145
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -438,7 +418,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
+  m_FirstSelected: {fileID: 1584711526}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
 --- !u!4 &162233146
@@ -463,7 +443,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 162233143}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2f1c30dbf4f48de47988a43f3f1d2303, type: 3}
   m_Name: 
@@ -483,7 +463,27 @@ MonoBehaviour:
   - {r: 0.47450984, g: 0, b: 1, a: 1}
   - {r: 0, g: 0.81568635, b: 1, a: 1}
   doubleTapThreshold: 0.5
-  trailEffectPrefab: {fileID: 0}
+  trailEffectPrefab: {fileID: 163083940}
+--- !u!114 &162233151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 162233143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
 --- !u!1 &163083940
 GameObject:
   m_ObjectHideFlags: 0
@@ -702,8 +702,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 162233147}
-        m_TargetAssemblyTypeName: PokeBallSpawner, Assembly-CSharp
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: PokeBallManager, Assembly-CSharp
         m_MethodName: SelectColor
         m_Mode: 3
         m_Arguments:
@@ -834,8 +834,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 162233147}
-        m_TargetAssemblyTypeName: PokeBallSpawner, Assembly-CSharp
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: PokeBallManager, Assembly-CSharp
         m_MethodName: SelectPokeBall
         m_Mode: 3
         m_Arguments:
@@ -1058,8 +1058,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 162233147}
-        m_TargetAssemblyTypeName: PokeBallSpawner, Assembly-CSharp
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: PokeBallManager, Assembly-CSharp
         m_MethodName: SelectColor
         m_Mode: 3
         m_Arguments:
@@ -1272,8 +1272,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 162233147}
-        m_TargetAssemblyTypeName: PokeBallSpawner, Assembly-CSharp
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: PokeBallManager, Assembly-CSharp
         m_MethodName: SelectPokeBall
         m_Mode: 3
         m_Arguments:
@@ -1486,8 +1486,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 162233147}
-        m_TargetAssemblyTypeName: PokeBallSpawner, Assembly-CSharp
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: PokeBallManager, Assembly-CSharp
         m_MethodName: SelectPokeBall
         m_Mode: 3
         m_Arguments:
@@ -1618,8 +1618,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 162233147}
-        m_TargetAssemblyTypeName: PokeBallSpawner, Assembly-CSharp
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: PokeBallManager, Assembly-CSharp
         m_MethodName: SelectColor
         m_Mode: 3
         m_Arguments:
@@ -1750,8 +1750,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 162233147}
-        m_TargetAssemblyTypeName: PokeBallSpawner, Assembly-CSharp
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: PokeBallManager, Assembly-CSharp
         m_MethodName: SelectPokeBall
         m_Mode: 3
         m_Arguments:
@@ -1903,6 +1903,86 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1584711526
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1584711529}
+  - component: {fileID: 1584711528}
+  - component: {fileID: 1584711527}
+  m_Layer: 0
+  m_Name: Event
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1584711527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1584711526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c7e6a54841d4344eacf2d70c21e609c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pokeBallManager: {fileID: 1584711528}
+  doubleTapThreshold: 0.3
+  swipeThreshold: 400
+--- !u!114 &1584711528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1584711526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b2a3f640dd7054498751edc11897f09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pokeBallConfigs:
+  - {fileID: 11400000, guid: 26dbdb55323be5644b5cfbff42a2a5da, type: 2}
+  - {fileID: 11400000, guid: 09b38cc64650b7245bfe30fc6c401d19, type: 2}
+  - {fileID: 11400000, guid: 33dbf210eedf8544baed812379449e64, type: 2}
+  - {fileID: 11400000, guid: 25240e42627218e48a912b0e96742c40, type: 2}
+  - {fileID: 11400000, guid: c26377facdd06614c9e41e7eb5955d3f, type: 2}
+  - {fileID: 11400000, guid: 87ccb0e015353d641ae9c07c02765965, type: 2}
+  colorConfigs:
+  - {fileID: 11400000, guid: 6d3815b35be9e804494bb6b6c3f93073, type: 2}
+  - {fileID: 11400000, guid: 2e8925d074f674841b396c656ff11326, type: 2}
+  - {fileID: 11400000, guid: 095042676d111b94b9a859a57a87ff1e, type: 2}
+  - {fileID: 11400000, guid: 96104c4ced0e5c241838c74f8c2283ab, type: 2}
+  - {fileID: 11400000, guid: 2450ed174c6a68e499e60965e78493ad, type: 2}
+  - {fileID: 11400000, guid: dfc89dda22c0b194c8ecdd1c97c40cbe, type: 2}
+  OnPokeBallSpawn:
+    m_PersistentCalls:
+      m_Calls: []
+  OnAllPokeBallsDeleted:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!4 &1584711529
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1584711526}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 939.9696, y: 804.37305, z: -3.796619}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1845268435
 GameObject:
   m_ObjectHideFlags: 0
@@ -1985,8 +2065,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 162233147}
-        m_TargetAssemblyTypeName: PokeBallSpawner, Assembly-CSharp
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: PokeBallManager, Assembly-CSharp
         m_MethodName: SelectColor
         m_Mode: 3
         m_Arguments:
@@ -2277,8 +2357,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 162233147}
-        m_TargetAssemblyTypeName: PokeBallSpawner, Assembly-CSharp
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: PokeBallManager, Assembly-CSharp
         m_MethodName: SelectColor
         m_Mode: 3
         m_Arguments:
@@ -2409,8 +2489,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 162233147}
-        m_TargetAssemblyTypeName: PokeBallSpawner, Assembly-CSharp
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: PokeBallManager, Assembly-CSharp
         m_MethodName: SelectColor
         m_Mode: 3
         m_Arguments:
@@ -2467,3 +2547,4 @@ SceneRoots:
   - {fileID: 1467352235}
   - {fileID: 162233146}
   - {fileID: 163083942}
+  - {fileID: 1584711529}
